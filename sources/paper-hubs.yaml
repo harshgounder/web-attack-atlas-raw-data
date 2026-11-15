@@ -1,0 +1,66 @@
+# registry file
+meta:
+  kind: paper-hub
+  description: academic proceedings, conference archives and practitioner research blogs
+
+entries:
+  - id: useenix-web
+    name: USENIX Security proceedings
+    url: https://www.usenix.org/conferences/byname/108
+    notes: web track papers going back decades, all open access.
+  - id: ndss
+    name: NDSS symposium
+    url: https://www.ndss-symposium.org
+    notes: the web-security-heavy academic venue, open archives.
+  - id: ccs
+    name: ACM CCS
+    url: https://www.sigsac.org/ccs/CCS-archive
+    notes: top security conference archive.
+  - id: sp
+    name: IEEE S&P (Oakland)
+    url: https://sp2026.ieee-security.org
+    notes: ieee symposium archive, web attack papers across 40+ years.
+  - id: blackhat
+    name: Black Hat briefings archive
+    url: https://www.blackhat.com/html/archives.html
+    notes: whitepapers and slides from every black hat since 1997. practitioner-side primary source.
+  - id: defcon
+    name: DEF CON media archive
+    url: https://media.defcon.org
+    notes: complete defcon talk archive, slides included.
+  - id: owasp-papers
+    name: OWASP guides and cheatsheets
+    url: https://owasp.org/www-project-cheat-sheets
+    notes: cheatsheet series, testing guide, ASVS. defence-side primary source.
+  - id: arxiv-sec
+    name: arXiv cs.CR
+    url: https://arxiv.org/list/cs.CR/recent
+    notes: preprint channel, early web attack research.
+  - id: semanticscholar-s2orc
+    name: Semantic Scholar S2ORC
+    url: https://github.com/allenai/s2orc
+    notes: open corpus of papers for bulk citation mining.
+  - id: hpdwt
+    name: portswigger research hub
+    url: https://portswigger.net/research
+    notes: james kettle et al. the single most influential modern web-attack research blog: request smuggling, param mining, cache attacks, http2.
+  - id: projzero-blog
+    name: Google Project Zero blog
+    url: https://googleprojectzero.blogspot.com
+    notes: deep technical writeups, browser and web exploitation included.
+  - id: doyensec-blog
+    name: Doyensec research blog
+    url: https://blog.doyensec.com
+    notes: electron, jwt, in-app browser attack research.
+  - id: sonarsource-blog
+    name: Sonar research blog
+    url: https://www.sonarsource.com/blog
+    notes: high volume cve-adjacent writeups on oss web stacks.
+  - id: rhino-blog
+    name: Rhino Security Labs research
+    url: https://rhinosecuritylabs.com/research
+    notes: aws, pacu, web attack research.
+  - id: synacktiv-blog
+    name: Synacktiv publications
+    url: https://www.synacktiv.com/publications
+    notes: exploitation research with poc code.

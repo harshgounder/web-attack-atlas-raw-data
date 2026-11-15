@@ -1,0 +1,126 @@
+# registry file
+meta:
+  kind: platform-tracker
+  description: per-platform vulnerability trackers for self-hosted and community web platforms
+
+entries:
+  - id: wordpress-per-plugin
+    name: WordPress per-plugin vuln data
+    url: https://wpscan.com/plugins
+    notes: via wpscan api, per-slug history.
+  - id: wpvulndb-archive
+    name: WPScan vulnerability database dumps
+    url: https://github.com/wpscanteam/wpscan-vulnerability-database
+    notes: historical dumps of the wp plugin vuln db.
+  - id: drupal-contrib-tracker
+    name: Drupal contrib advisories
+    url: https://www.drupal.org/security/contrib
+    notes: contrib module advisories, per-module.
+  - id: joomla-vel-per-ext
+    name: Joomla VEL per extension
+    url: https://vel.joomla.org
+    notes: per-extension listing.
+  - id: magento-marketplace
+    name: Magento extensions history
+    url: https://helpx.adobe.com/security
+    notes: apsb bulletins cover marketplace extensions too.
+  - id: prestashop-advisories
+    name: PrestaShop security advisories
+    url: https://www.prestashop.com/en/security-advisories
+    notes: prestashop ps- class mass exploitation 2022+.
+  - id: typo3-security
+    name: TYPO3 security bulletins
+    url: https://typo3.org/help/security-advisories
+    notes: long running per-extension bulletins.
+  - id: concrete5-advisories
+    name: Concrete CMS advisories
+    url: https://documentation.concretecms.org/security
+    notes: tracked by cve cnas directly.
+  - id: sharepoint-cves
+    name: SharePoint web-part vuln history
+    url: https://www.msrc.microsoft.com
+    notes: cross-ref msrc, toolshell-class 2025 incidents.
+  - id: webmin-virtualmin
+    name: Webmin/Virtualmin advisories
+    url: https://www.webmin.com/security.html
+    notes: classic panel rce history.
+  - id: gitlab-selfhosted
+    name: GitLab security releases
+    url: https://about.gitlab.com/releases/categories/releases
+    notes: self-hosted gitlab is itself an attacked web platform, per-release advisories.
+  - id: grafana-security
+    name: Grafana security advisories
+    url: https://grafana.com/security/security-advisories
+    notes: path traversal and ssrf history (grafana-file-read class).
+  - id: kibana-security
+    name: Elastic Kibana advisories
+    url: https://www.elastic.co/community/security
+    notes: kibana prototype-pollution to rce class.
+  - id: superset-security
+    name: Apache Superset advisories
+    url: https://github.com/apache/superset/security
+    notes: recent signed-cookie class.
+  - id: airflow-security
+    name: Apache Airflow advisories
+    url: https://airflow.apache.org/docs
+    notes: example-app default-creds class, exploited at scale.
+  - id: nexus-sonatype
+    name: Sonatype Nexus advisories
+    url: https://support.sonatype.com
+    notes: repo-manager web surface.
+  - id: octopus-ansible-awx
+    name: Ansible AWX / ops tools advisories
+    url: https://github.com/ansible/awx/security
+    notes: ops-plane web surfaces.
+  - id: minio-console
+    name: MinIO console advisories
+    url: https://github.com/minio/console/security
+    notes: object-store web console surface.
+  - id: argocd-rancher
+    name: Argo CD and Rancher advisories
+    url: https://github.com/argoproj/argo-cd/security
+    notes: gitops web surfaces.
+  - id: k8s-dashboard
+    name: Kubernetes dashboard advisories
+    url: https://github.com/kubernetes/dashboard/security
+    notes: cluster-web bridge surface.
+  - id: moodle-security
+    name: Moodle security announcements
+    url: https://moodle.org/security
+    notes: biggest lms, weekly advisories.
+  - id: nextcloud-owncloud
+    name: Nextcloud/ownCloud advisories
+    url: https://nextcloud.com/security/advisories
+    notes: self-hosted cloud web surface, hmac-bypass class 2023.
+  - id: gitea-forgejo
+    name: Gitea/Forgejo advisories
+    url: https://github.com/go-gitea/gitea/security
+    notes: lightweight forge surface.
+  - id: phpmyadmin
+    name: phpMyAdmin PMASA
+    url: https://www.phpmyadmin.net/security
+    notes: pmasa series, classic admin-panel history.
+  - id: roundcube-soho
+    name: Roundcube advisories
+    url: https://roundcube.net/security
+    notes: webmail surface, recent postauth rce chain.
+  - id: zimbra-security
+    name: Zimbra security advisories
+    url: https://wiki.zimbra.com/wiki/Security_Center
+    notes: webmail/xsl class mass exploitation.
+  - id: openemr-ehis
+    name: OpenEMR advisories
+    url: https://www.open-emr.org/wiki/index.php/OpenEMR_Security
+    notes: healthcare web surface, projectbenchmarked by cisa ics.
+  - id: orangehrm-erpnext
+    name: ERPNext / open erp advisories
+    url: https://github.com/frappe/erpnext/security
+    notes: erp web surfaces.
+  - id: cacti-zabbix
+    name: Cacti/Zabbix advisories
+    url: https://www.zabbix.com/security_advisories
+    notes: monitoring web surfaces, cacti cmd injection class 2022.
+  - id: openvas-greenbone
+    name: Greenbone/GVM advisories
+    url: https://www.greenbone.net/security
+    notes: security-tool web surfaces.

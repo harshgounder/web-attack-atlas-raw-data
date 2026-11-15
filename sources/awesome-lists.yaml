@@ -1,0 +1,62 @@
+# registry file
+meta:
+  kind: awesome-list
+  description: curated community lists indexing tools, writeups and techniques per topic
+
+entries:
+  - id: awesome-cve-poc
+    name: awesome-cve-poc
+    url: https://github.com/lnick2023/nicenice
+    notes: curated cve poc list.
+  - id: awesome-pentest
+    name: awesome-pentest
+    url: https://github.com/enaqx/awesome-pentest
+    notes: the big pentest resources list, includes web sections.
+  - id: awesome-web-security
+    name: awesome-web-security
+    url: https://github.com/qazbnm456/awesome-web-security
+    notes: web security materials by category: xss, csrf, ssrf, deserialization and more.
+  - id: awesome-bug-bounty
+    name: awesome-bug-bounty
+    url: https://github.com/djadmin/awesome-bug-bounty
+    notes: bug bounty writeups, methodologies, payloads, tools.
+  - id: awesome-cyber-skills
+    name: awesome-cyber-skills
+    url: https://github.com/joe-shenouda/awesome-cyber-skills
+    notes: curated hacking environments and labs.
+  - id: awesome-osint
+    name: awesome-osint
+    url: https://github.com/jbcarreon3/awesome-osint
+    notes: osint source lists, upstream of recon data.
+  - id: awesome-appsec
+    name: awesome-appsec
+    url: https://github.com/paragonie/awesome-appsec
+    notes: application security learning resources, continuous curated.
+  - id: awesome-hacking
+    name: awesome-hacking
+    url: https://github.com/Hack-with-Github/Awesome-Hacking
+    notes: hub of hubs, dozens of sub-lists including web-focused ones.
+  - id: awesome-web-hacking
+    name: awesome-web-hacking
+    url: https://github.com/sindresorhus/awesome-web-hacking
+    notes: web hacking tools and resources.
+  - id: awesome-bugbounty-writeups
+    name: awesome-bugbounty-writeups
+    url: https://github.com/devanshbatham/Awesome-Bugbounty-Writeups
+    notes: hundreds of real disclosed bug bounty writeups, platform by platform.
+  - id: awesome-csp
+    name: awesome-csp-bypass etc
+    url: https://github.com/search?q=awesome+csp
+    notes: search channel for niche awesome lists (csp, cors, jwt, oauth); several exist per topic.
+  - id: awesome-vulnerable-apps
+    name: awesome vulnerable apps lists
+    url: https://github.com/kaiiyer/awesome-vulnerable
+    notes: deliberately vulnerable apps, useful as lab targets tied to real cves.
+  - id: awesome-otw
+    name: awesome-owasp-resources
+    url: https://github.com/Sappointe/awesome-owasp
+    notes: owasp project index including testing guide and cheatsheets.
+  - id: awesome-404-list-hub
+    name: the-art-of-the-internet-security-list-hubs
+    url: https://github.com/sbilly/awesome-security
+    notes: another hub list for cross-verification of the awesome ecosystem.

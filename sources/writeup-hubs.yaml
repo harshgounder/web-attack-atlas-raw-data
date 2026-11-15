@@ -1,0 +1,48 @@
+# registry file
+meta:
+  kind: writeup-hub
+  description: disclosed bug bounty reports, researcher blogs and narrative writeup archives
+
+entries:
+  - id: hackerone-hacktivity
+    name: HackerOne Hacktivity
+    url: https://hackerone.com/hacktivity
+    access:
+      api: https://api.hackerone.com/v1/graphql (public reports, rate limited)
+    notes: largest disclosed bug bounty archive. per-report severity, platform, bounty. the primary modern web-attack narrative corpus.
+  - id: bugcrowd-disclosure
+    name: Bugcrowd disclosed reports
+    url: https://bugcrowd.com
+    notes: disclosure tab per program. partial, no bulk export.
+  - id: intigriti-hall-of-fame
+    name: Intigriti research hub and writeups
+    url: https://blog.intigriti.com
+    notes: monthly challenge writeups plus researcher blogs.
+  - id: yeswehack-blog
+    name: YesWeHack blog writeups
+    url: https://blog.yeswehack.com
+    notes: dothr treatise-style writeups per platform.
+  - id: medium-infosec-writeups
+    name: InfoSec Write-ups (medium)
+    url: https://infosecwriteups.com
+    notes: the de-facto public archive of bug bounty narratives.
+  - id: portswigger-web-academy
+    name: PortSwigger Web Security Academy
+    url: https://portswigger.net/web-security
+    notes: structured attack technique catalogue with labs, free. defence-and-offence canonical teaching corpus.
+  - id: 0xpatrik-etc
+    name: personal research blogs (index)
+    url: https://github.com/djadmin/awesome-bug-bounty
+    notes: hundreds of researcher blogs indexed by the awesome lists; individual blog rows added as they are mined.
+  - id: vulnops-writeups
+    name: NahamSec / STOK / InsiderPHD channels
+    url: https://www.youtube.com/@NahamSec
+    notes: video writeup corpus, transcript-indexable.
+  - id: project-discovery-blog
+    name: ProjectDiscovery blog
+    url: https://blog.projectdiscovery.io
+    notes: technique deep dives with nuclei template artefacts.
+  - id: oxeye-etc-research
+    name: vendor research blogs (veracode, oxeye, checkmarx)
+    url: https://veracode.com/blog
+    notes: supply-chain and code-level web vuln research cluster.

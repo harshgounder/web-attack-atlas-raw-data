@@ -1,0 +1,148 @@
+# registry file
+meta:
+  kind: vendor-advisory
+  description: first-party vendor and project advisory feeds, per product
+
+entries:
+  - id: wordpress-plugins
+    name: WordPress plugin/theme advisories
+    url: https://wpscan.com
+    access:
+      api: https://wpscan.com/api/v3
+      license: freemium
+    notes: wpscan tracks vulns per plugin and theme. wordpress is the largest single attack surface in web history, 60k+ plugins.
+  - id: patchstack
+    name: Patchstack database
+    url: https://patchstack.com/database
+    notes: wp and php ecosystem advisories, community plus commercial, high volume.
+  - id: wordfence-threat-map
+    name: Wordfence threat intelligence
+    url: https://www.wordfence.com/threat-intel
+    notes: real attack telemetry against wordpress, cve cross-referenced.
+  - id: drupal-security
+    name: Drupal security advisories
+    url: https://www.drupal.org/security
+    access:
+      api: https://www.drupal.org/security/advisories
+    notes: drupalgeddon sa-core advisories live here, historically mass-exploited.
+  - id: joomla-vdc
+    name: Joomla Vulnerable Extensions List
+    url: https://vel.joomla.org
+    notes: vel, the per-extension vuln list, running since 2007.
+  - id: magento-security
+    name: Adobe/Magento security bulletins
+    url: https://helpx.adobe.com/security.html
+    notes: covers magento shoplift-era and current apsb bulletins.
+  - id: shopify-bounties
+    name: Shopify disclosed reports
+    url: https://hackerone.com/shopify
+    notes: one of the largest disclosed ecommerce bug surfaces.
+  - id: microsoft-msrc
+    name: MSRC advisories
+    url: https://www.msrc.microsoft.com
+    access:
+      api: https://api.msrc.microsoft.com/cvrf/v2.0
+      license: open
+    notes: iis, asp.net, edge, exchange, sharepoint. cvrf format, machine readable.
+  - id: oracle-cpu
+    name: Oracle Critical Patch Updates
+    url: https://www.oracle.com/security-alerts
+    notes: weblogic, glassfish and dozens of server products. weblogic deserialization history lives here.
+  - id: vmware-tanzu
+    name: VMware/Tanzu security advisories
+    url: https://spring.io/security
+    notes: spring framework advisories (spring4shell etc).
+  - id: apache-advisories
+    name: Apache security advisories
+    url: https://httpd.apache.org/security
+    notes: per-project advisories across httpd, tomcat, struts, solr, ofbiz, struts2 exploits were mass weaponised.
+  - id: nginx-security
+    name: nginx advisories
+    url: https://nginx.org/en/security_advisories.html
+    notes: unit and core advisories.
+  - id: php-security
+    name: PHP security page
+    url: https://www.php.net/security
+    notes: language runtime advisories.
+  - id: nodejs-security
+    name: Node.js security releases
+    url: https://nodejs.org/en/blog/vulnerability
+    notes: runtime level advisories.
+  - id: django-security
+    name: Django security releases
+    url: https://docs.djangoproject.com/en/stable/releases/security
+    notes: annotated, cwe-mapped, model citizen of vendor disclosure.
+  - id: rails-security
+    name: Ruby on Rails security advisories
+    url: https://rubyonrails.org/security
+    notes: mass assignment, yaml deserialization era history.
+  - id: laravel-blog
+    name: Laravel advisory history
+    url: https://github.com/laravel/framework/security/advisories
+    notes: github-hosted advisories incl the live-wired wildfire-era issues.
+  - id: npm-advisories
+    name: npm security advisories
+    url: https://www.npmjs.com/advisories
+    access:
+      bulk: via ghsa
+    notes: javascript package ecosystem, supply-chain and prototype pollution history.
+  - id: pypi-advisories
+    name: PyPI advisories
+    url: https://pypi.org
+    notes: cross-linked from osv/ghsa; direct channel for python packages.
+  - id: packagist-friends
+    name: FriendsOfPHP security advisories
+    url: https://github.com/FriendsOfPHP/security-advisories
+    notes: community db for php packages, pre-dates ghsa coverage of php.
+  - id: rustsec
+    name: RustSec advisory database
+    url: https://github.com/RustSec/advisory-db
+    notes: rust crates.
+  - id: go-vulndb
+    name: Go vulnerability database
+    url: https://vuln.go.dev
+    notes: official go vulndb, osv format.
+  - id: chromium-releases
+    name: Chromium security releases
+    url: https://chromereleases.googleblog.com
+    notes: browser-side attack surface, v8 and renderer exploits, with bug tracker links.
+  - id: firefox-advisories
+    name: Mozilla security advisories
+    url: https://www.mozilla.org/en-US/security/advisories
+    notes: gecko-side equivalent.
+  - id: webkit-security
+    name: WebKit security advisories
+    url: https://webkit.org/security-advisories
+    notes: safari and embedded webview attack surface.
+  - id: jenkins-advisories
+    name: Jenkins security advisories
+    url: https://www.jenkins.io/security/advisories
+    notes: ci/cd web surface, dozens of plugin advisories per year.
+  - id: cpanel-advisories
+    name: cPanel security advisories
+    url: https://cpanel.net/security
+    notes: hosting-panel attack surface.
+  - id: vmware-vcenter
+    name: VMware vCenter advisories
+    url: https://www.vmware.com/security/advisories
+    notes: vcenter web endpoints, heavily exploited class.
+  - id: fortinet-psirt
+    name: Fortinet PSIRT
+    url: https://www.fortiguard.com/psirt
+    notes: ssl-vpn web surface, fortigate mass exploitation history.
+  - id: citrix-advisories
+    name: Citrix security bulletins
+    url: https://support.citrix.com/security-bulletins
+    notes: netscaler/shadowbroker-era history, citrixbleed class.
+  - id: ivanti-advisories
+    name: Ivanti advisories
+    url: https://forums.ivanti.com/s/article/Security-Advisories
+    notes: pulse/epmm mass exploitation history.
+  - id: cisco-psirt
+    name: Cisco PSIRT
+    url: https://tools.cisco.com/security/center
+    notes: asa/ ise/ webvpn web surfaces.
+  - id: atlassian-advisories
+    name: Atlassian security advisories
+    url: https://www.atlassian.com/trust/security/advisories
+    notes: confluence/ jira ognl injection history.

@@ -1,0 +1,46 @@
+# registry file
+meta:
+  kind: payload-corpus
+  description: raw payload, wordlist and vector collections
+
+entries:
+  - id: payloadsallthethings
+    name: PayloadsAllTheThings
+    url: https://github.com/swisskyrepo/PayloadsAllTheThings
+    notes: the central methodology-plus-payload repo: injection, ssti, deserialization, ssrf, and dozens more, each with raw payload lists.
+  - id: seclists
+    name: SecLists
+    url: https://github.com/danielmiessler/SecLists
+    notes: the payload and wordlist collection: fuzzdb descendants, xss vectors, sqli auth bypasses, all raw.
+  - id: fuzzdb
+    name: FuzzDB
+    url: https://github.com/fuzzdb-project/fuzzdb
+    notes: historical first payload corpus, still valid.
+  - id: hacktricks
+    name: HackTricks
+    url: https://book.hacktricks.xyz
+    notes: technique encyclopedia with payload context, per tech and per service.
+  - id: owasp-wstg
+    name: OWASP Web Security Testing Guide
+    url: https://owasp.org/www-project-web-security-testing-guide
+    notes: the defence-side test catalogue, maps to the same attack surface.
+  - id: xss-payload-lists
+    name: PayloadBox XSS payload list
+    url: https://github.com/payloadbox/xss-payload-list
+    notes: raw xss vector corpus.
+  - id: sqli-payload-lists
+    name: PayloadBox SQLi payload list
+    url: https://github.com/payloadbox/sql-injection-payload-list
+    notes: raw sqli vector corpus.
+  - id: command-injection-lists
+    name: command injection payloads collections
+    url: https://github.com/search?q=command+injection+payloads
+    notes: search channel for per-technique payload repos; several maintained.
+  - id: jwt-secrets
+    name: JWT secrets and attacks lists
+    url: https://github.com/wallarm/jwt-secrets
+    notes: jwt key corpora plus none-alg attack context.
+  - id: wordfence-firewall-rules
+    name: Wordfence attack data (published writeups)
+    url: https://www.wordfence.com/blog
+    notes: documents real in-the-wild wordpress exploit attempts seen in telemetry, weekly.

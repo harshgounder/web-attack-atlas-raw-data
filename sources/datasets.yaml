@@ -1,0 +1,46 @@
+# registry file
+meta:
+  kind: dataset
+  description: machine-readable vulnerability, patch and exploit datasets from academia and industry
+
+entries:
+  - id: secrepo
+    name: SecRepo
+    url: https://www.secrepo.com
+    notes: the directory of security-related datasets.
+  - id: cvefixes
+    name: CVEfixes
+    url: https://github.com/secureIT-project/CVEfixes
+    notes: cves linked to vulnerable and fixed code from git history.
+  - id: big-vul
+    name: Big-Vul
+    url: https://github.com/ZeoVan/MSR_20_Code_vulnerability_CSV_Dataset
+    notes: 375k functions across 348 projects paired with cve fixes.
+  - id: devign
+    name: Devign
+    url: https://github.com/microsoft/Devign
+    notes: graph-based vulnerability dataset from four large oss projects.
+  - id: diversevul
+    name: DiverseVul
+    url: https://github.com/wagner-group/diversevul
+    notes: 797k functions, 150k vulnerable, from 797 repos.
+  - id: primevul
+    name: PrimeVul
+    url: https://github.com/tudelft-cda-lab/PrimeVul
+    notes: decontaminated successor benchmark fixing leakage in earlier sets.
+  - id: sard
+    name: NIST SARD
+    url: https://samate.nist.gov/SARD
+    notes: test cases for static analysers.
+  - id: sate
+    name: NIST SATE
+    url: https://www.nist.gov/itl/ssd/software-assurance-tool-exposition-sate
+    notes: static analysis tool exposition corpora.
+  - id: juliet
+    name: NSA Juliet test suite
+    url: https://samate.nist.gov/SARD/test-suite-view.php?id=2
+    notes: thousands of cwe-tagged vulnerable-good pairs.
+  - id: huggingface-vuln-datasets
+    name: HuggingFace vulnerability datasets
+    url: https://huggingface.co/datasets?search=vulnerability
+    notes: search channel for community repackagings. verify licences per dataset.

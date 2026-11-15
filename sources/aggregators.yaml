@@ -1,0 +1,90 @@
+# registry file
+meta:
+  kind: aggregator
+  description: databases that index vulnerabilities across all platforms, stacks and vendors
+
+entries:
+  - id: cve-mitre
+    name: MITRE CVE
+    url: https://cve.org
+    access:
+      api: https://cveawg.mitre.org/api/cve
+      license: public-domain
+    notes: the root identifier system. no scores or enrichment, but every other source keys off it.
+  - id: nvd
+    name: National Vulnerability Database
+    url: https://nvd.nist.gov
+    access:
+      api: https://services.nvd.nist.gov/rest/json/cves/2.0
+      bulk: https://nvd.nist.gov/vuln/data-feeds
+      license: public-domain
+    notes: cve enrichment with cvss, cwe mapping and cpe platform bindings. the primary structured view of the whole field.
+  - id: osv
+    name: OSV (Open Source Vulnerabilities)
+    url: https://osv.dev
+    access:
+      api: https://api.osv.dev/v1/vulns/{id}
+      bulk: https://google.github.io/osv.dev/bulk-vulnerability-data.html
+      license: cc-by-4.0
+    notes: precise version ranges, covers npm pypi maven go ruby rust. scanner backend for grype and trivy.
+  - id: ghsa
+    name: GitHub Advisory Database
+    url: https://github.com/advisories
+    access:
+      bulk: https://github.com/github/advisory-database
+      license: cc-by-4.0
+    notes: cve and ghsa advisories for oss packages, community reviewed via prs, wired into dependabot.
+  - id: gitlab-advisory
+    name: GitLab Advisory Database
+    url: https://gitlab.com/gitlab-org/security-products/gemnasium-db
+    access:
+      license: mit
+    notes: mirrors nvd, osv, rustsec and more into one open database.
+  - id: gsd
+    name: Global Security Database
+    url: https://globalsecuritydatabase.org
+    notes: csa initiative for vulnerabilities that never receive a cve id.
+  - id: vulners
+    name: Vulners
+    url: https://vulners.com
+    notes: indexes 200+ sources including exploit-db, packetstorm, bugtraq and vendor advisories into one search engine.
+  - id: vulncheck
+    name: VulnCheck
+    url: https://vulncheck.com
+    notes: commercial enrichment with free community indices. docs list dozens of upstream indices it aggregates.
+  - id: cnnvd
+    name: CNNVD
+    url: https://www.cnnvd.org.cn
+    notes: chinese national db. many china-only disclosures never get a cve.
+  - id: cnvd
+    name: CNVD
+    url: https://www.cnvd.org.cn
+    notes: second chinese national db, upstream of many cnnvd entries.
+  - id: jvn
+    name: JVN Japan Vulnerability Notes
+    url: https://jvn.jp
+    notes: japanese national feed, jpcert coordinated.
+  - id: cve-partners
+    name: CVE Partner feeds (all CNAs)
+    url: https://www.cve.org/partners
+    notes: every cve numbering authority publishes its own advisories. the partner list is the master index of vendor-first disclosure.
+  - id: cve-binary-tool-db
+    name: CVE Binary Tool aggregated db
+    url: https://github.com/intel/cve-binary-tool
+    notes: intel mirror aggregating nvd, osv, ghsa and vendor feeds, redistributable.
+  - id: trivy-db
+    name: Aqua Trivy advisory database
+    url: https://github.com/aquasecurity/trivy-db
+    notes: open aggregation pipeline with source mappings for os and language packages.
+  - id: chainguard-advisories
+    name: Chainguard Advisories
+    url: https://github.com/chainguard-dev/advisories
+    notes: osv-format advisories incl vex false-positive statements.
+  - id: ics-advisory-project
+    name: ICS Advisory Project
+    url: https://github.com/cisagov/ics-advisory-project
+    notes: all cisa ics-cert advisories as structured csv and json.
+  - id: avid
+    name: AI Vulnerability Database (AVID)
+    url: https://avidml.org
+    notes: failure modes for ai models and systems. feeds atlas atom A16.

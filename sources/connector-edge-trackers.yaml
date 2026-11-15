@@ -1,0 +1,26 @@
+# registry file
+meta:
+  kind: edge-tracker
+  description: proxies, gateways and edge infrastructure advisory trackers
+
+entries:
+  - id: caddy-traefik
+    name: Caddy/Traefik advisories
+    url: https://github.com/traefik/traefik/security
+    notes: edge proxy web surface.
+  - id: envoy-istio
+    name: Envoy/Istio advisories
+    url: https://istio.io/latest/news/security
+    notes: service-mesh web surface.
+  - id: h2-smuggling-research
+    name: HTTP/2 request smuggling research corpus
+    url: https://portswigger.net/research/http2
+    notes: cross-track: kettle corpus keyed to cves 2019-2024.
+  - id: reverse-proxies
+    name: HAProxy/Squid/VarNish advisories
+    url: https://www.haproxy.com/security-advisories
+    notes: cache and proxy web surface.
+  - id: kong-apisix
+    name: API gateway advisories (kong, apisix, tyk)
+    url: https://github.com/apache/apisix/security
+    notes: apisix default-key class history.

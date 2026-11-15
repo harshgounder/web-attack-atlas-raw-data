@@ -1,0 +1,50 @@
+# registry file
+meta:
+  kind: auth-tracker
+  description: per-auth-method and identity-stack vulnerability trackers
+
+entries:
+  - id: oauth-idp-advisories
+    name: OAuth/OIDC provider advisories cluster
+    url: https://github.com/topics/oauth
+    notes: cross-track: oauth implementation vulns surface across keycloak, ory, auth0, okta, gluu. per-product rows queued.
+  - id: keycloak-security
+    name: Keycloak advisories
+    url: https://github.com/keycloak/keycloak/security
+    notes: the biggest self-hosted idp.
+  - id: auth0-okta-trust
+    name: Auth0/Okta trust centers
+    url: https://trust.okta.com
+    notes: commercial idp advisories, incl the 2022 okta compromise class.
+  - id: saml-toolkit-advisories
+    name: SAML toolkit advisories (onelogin, simplesamlphp)
+    url: https://github.com/simplesamlphp/simplesamlphp/security
+    notes: saml signature-wrapping history cluster.
+  - id: jwt-libraries
+    name: JWT library advisories (jsonwebtoken, pyjwt, jjwt)
+    url: https://github.com/dvsekhvalnov/jose2go/security
+    notes: alg-confusion and key-injection advisories across all jwt libs.
+  - id: otp-2fa-libraries
+    name: OTP/2FA library advisories
+    url: https://github.com/search?q=otp+advisory
+    notes: totp brute, replay and seed-storage advisories, tracked per library.
+  - id: passkeys-webauthn
+    name: WebAuthn/FIDO advisories
+    url: https://github.com/fido-alliance
+    notes: emerging surface, advisory channel via fido alliance metadata.
+  - id: session-managers
+    name: Session store advisories (connect-mongo, express-session etc)
+    url: https://github.com/expressjs/session/security
+    notes: session fixation and store-injection class.
+  - id: password-reset-frameworks
+    name: Password reset implementations research
+    url: https://portswigger.net/web-security/authentication
+    notes: reset-token flaws are a top ato vector; academy section as canonical reference.
+  - id: captcha-advisories
+    name: CAPTCHA service advisories
+    url: https://github.com/search?q=captcha+bypass
+    notes: captcha bypass research channel; per-service rows queued.
+  - id: sso-plugins-ecosystems
+    name: SSO plugin ecosystems (wp sso plugins, next-auth, passport)
+    url: https://github.com/nextauthjs/next-auth/security
+    notes: sso glue is its own attacked surface; per-package rows queued.

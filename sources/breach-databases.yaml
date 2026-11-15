@@ -1,0 +1,30 @@
+# registry file
+meta:
+  kind: breach-db
+  description: databases of real historical breaches and mass-exploitation events
+
+entries:
+  - id: hibp
+    name: Have I Been Pwned breach catalogue
+    url: https://haveibeenpwned.com/PwnedWebsites
+    notes: 700+ breaches with dates, pwn counts, and attack narratives. the timeline of real web account attacks.
+  - id: privacyrights
+    name: Privacy Rights Clearinghouse chronology
+    url: https://privacyrights.org/data-breaches
+    notes: 40k unique us breach events since 2005 from government notifications.
+  - id: viribreach
+    name: ViriBreach / breach datasets on secrepo
+    url: https://www.secrepo.com
+    notes: cross-link: secrepo indexes downloadable breach corpora.
+  - id: cshub-incident-db
+    name: ITRC breach list
+    url: https://www.idtheftcenter.org/data-breaches
+    notes: annual us breach reports with attack-vector classification.
+  - id: webarchive-defaced
+    name: Zone-H archive (defaced sites)
+    url: https://web.archive.org/web/*/zone-h.org
+    notes: zone-h recorded millions of defacements 2001-2010s; wayback preserved. historical mass-attack evidence.
+  - id: breachforums-archive
+    name: Breach forum history (context only)
+    url: https://en.wikipedia.org/wiki/RaidForums
+    notes: context for stolen-data circulation, not a data source itself.
